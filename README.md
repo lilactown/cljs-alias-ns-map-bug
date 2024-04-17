@@ -4,7 +4,7 @@ Currently, ClojureScript compilation fails when requiring a namespace using
 `:as-alias` and then using that alias in a namespaced map.
 
 ```
-$ cat src/app/main.cljs
+$ cat src/app/a.cljs
 (ns app.a
   (:require
     [app.b :as-alias b]))
