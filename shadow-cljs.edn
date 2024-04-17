@@ -1,0 +1,8 @@
+{:source-paths ["src"]
+ :builds {:app {:target :browser
+                :output-to "resources/public/js/app.js"
+                :asset-path "/js"
+                :modules {:main {:entries [app.main]
+                                 :init-fn app.main/init!}}
+                :devtools {:http-root "resources/public"
+                           :http-port 8280}}}}
